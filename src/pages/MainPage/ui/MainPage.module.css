@@ -1,0 +1,13 @@
+.pageWrapper {
+    background-color: #fbfdff;
+    height: 100vh;
+}
+
+.pageContainer {
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

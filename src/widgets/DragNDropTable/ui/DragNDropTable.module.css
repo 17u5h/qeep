@@ -1,0 +1,30 @@
+.dropArea {
+    position: relative;
+    width: 80vw;
+    min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border: 2px dashed #aaa;
+    cursor: pointer;
+}
+
+.hint {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: calc(50% - 250px);
+    color: #aaa;
+    font-size: 40px;
+    line-height: var(--font-line-xxl);
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .hint {
+        font-size: 20px;
+        width: 260px;
+        left: calc(50% - 130px);
+    }
+}
