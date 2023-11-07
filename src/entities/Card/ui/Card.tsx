@@ -38,8 +38,7 @@ const Card = ({file, index, submit, api_url, setHint, files, setFiles, setSubmit
 				onUploadProgress: (progressEvent) => uploadProgress(progressEvent)
 			})
 			countUploadedFiles.push(true)
-			console.log(files.length)
-			console.log(countUploadedFiles)
+
 			if (files.length === countUploadedFiles.length) {
 				setFiles([])
 				setSubmit(false)
