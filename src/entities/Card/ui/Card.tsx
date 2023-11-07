@@ -42,7 +42,7 @@ const Card = ({file, index, submit, api_url, setHint, files, setFiles, setSubmit
 			if (files.length === countUploadedFiles.length) {
 				setFiles([])
 				setSubmit(false)
-				countUploadedFiles = []
+				countUploadedFiles.length = 0
 				setHint(Hint.PICTURES_SENT)
 				setTimeout(() => {
 					setHint(Hint.LOAD_PICTURES)

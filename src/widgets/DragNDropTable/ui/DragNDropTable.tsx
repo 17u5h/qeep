@@ -6,7 +6,7 @@ import {Card} from "../../../entities/Card";
 
 const fileTypes = ["JPG", "PNG", "GIF"];
 
-const API_URL = 'http://httpbin.org/post'
+const API_URL = 'https://httpbin.org/post'
 
 export enum Hint {
 	LOAD_PICTURES = 'Загрузите фотографии',
@@ -21,7 +21,7 @@ const DragNDropTable = () => {
 	const [hint, setHint] = useState<string>(Hint.LOAD_PICTURES)
 	const [submit, setSubmit] = useState<boolean>(false)
 
-	let countUploadedFiles: boolean[] = []
+	const countUploadedFiles: boolean[] = []
 
 
 	const handleChange = (file: Blob | null) => {
