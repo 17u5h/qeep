@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import cls from "./Card.module.css";
 import axios, {AxiosProgressEvent} from "axios";
-import {Hint} from "../../../widgets/DragNDropTable/ui/DragNDropTable";
+import {File, Hint} from "../../../widgets/DragNDropTable/ui/DragNDropTable";
 
 type Props = {
-	file: string | ArrayBuffer | null
+	file: File
 	index: number
 	countUploadedFiles: boolean[]
 	submit: boolean
 	api_url: string
 	setHint: (hint: string) => void
-	files: (string | ArrayBuffer | null)[]
-	setFiles: (files: (string | ArrayBuffer | null)[]) => void
+	files: File[]
+	setFiles: (files: File[]) => void
 	setSubmit: (submit: boolean) => void
 }
 

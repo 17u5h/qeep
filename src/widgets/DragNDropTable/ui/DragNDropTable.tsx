@@ -14,10 +14,12 @@ export enum Hint {
 	PICTURES_NOT_SENT = 'Фотографии не отправлены'
 }
 
+export type File = string | ArrayBuffer | null
+
 const DragNDropTable = () => {
 
-	const [files, setFiles] = useState<(string | ArrayBuffer | null)[]>([]);
-	const [file, setFile] = useState<string | ArrayBuffer | null>(null)
+	const [files, setFiles] = useState<File[]>([]);
+	const [file, setFile] = useState<File>(null)
 	const [hint, setHint] = useState<string>(Hint.LOAD_PICTURES)
 	const [submit, setSubmit] = useState<boolean>(false)
 
